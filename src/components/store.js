@@ -13,7 +13,7 @@ class Store extends Component {
 
   renderListings() {
     return this.props.listings.results.map((listing) => {
-      return (<ItemCard item={listing} />);
+      return (<ItemCard item={listing} key={listing.listing_id}/>);
     });
   }
 
@@ -23,7 +23,16 @@ class Store extends Component {
       return <div>LOADING</div>;
     }
 
-    return ( <div className="card-deck">{this.renderListings()}</div> );
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="card-deck">{this.renderListings()}</div>
+          </div>
+        </div>
+      </div>
+    );
+
 
   }
 }
