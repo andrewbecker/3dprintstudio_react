@@ -4,5 +4,6 @@
 }*/
 
 .card-title {
-  height: 60px;
+  height: 52px;
+  overflow: hidden;
 }

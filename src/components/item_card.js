@@ -11,7 +11,7 @@ class ItemCard extends Component {
             </div>
             <div className="card-block">
               <div className="card-title">
-                <h2 className="h6">{item.title.replace(/&quot;/g, '"')}</h2>
+                <h2 className="h6 ellipsis">{item.title.replace(/&quot;/g, '"')}</h2>
               </div>
               <span>${item.price}</span>
             </div>
